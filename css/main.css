@@ -17,6 +17,11 @@ body {
   filter: alpha(opacity=50);
 }
 
+.img-transparent-or {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
 .img-transparent:hover {
   opacity: 1;
   filter: alpha(opacity=100);
