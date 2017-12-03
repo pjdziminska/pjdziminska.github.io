@@ -18,8 +18,8 @@ body {
 }
 
 .img-transparent-or {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  opacity: 0.3;
+  filter: alpha(opacity=30);
 }
 
 .img-transparent:hover {
