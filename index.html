@@ -40,7 +40,7 @@
             </a>
           </div>
           <div class="col-md-4">
-            <a href="http://www.patternutopia.com/" target="_blank">
+            <a href="#" onclick="runPortfolio()">
              <img src="img/portfolio.png" class="img-responsive img-transparent">
             </a>
           </div>
@@ -82,6 +82,40 @@
             <a href="img/lookbook/14.jpg">
             </a>
         </div>
+        <div class="portfolio">
+            <a href="img/portfolio/01.jpg" id="portfolio-trigger">
+            </a>
+            <a href="img/portfolio/02.jpg">
+            </a>
+            <a href="img/portfolio/03.jpg">
+            </a>
+            <a href="img/portfolio/04.jpg">
+            </a>
+            <a href="img/portfolio/05.jpg">
+            </a>
+            <a href="img/portfolio/06.jpg">
+            </a>
+            <a href="img/portfolio/07.jpg">
+            </a>
+            <a href="img/portfolio/08.jpg">
+            </a>
+            <a href="img/portfolio/09.jpg">
+            </a>
+            <a href="img/portfolio/10.jpg">
+            </a>
+            <a href="img/portfolio/11.jpg">
+            </a>
+            <a href="img/portfolio/12.jpg">
+            </a>
+            <a href="img/portfolio/13.jpg">
+            </a>
+            <a href="img/portfolio/14.jpg">
+            </a>
+            <a href="img/portfolio/15.jpg">
+            </a>
+            <a href="img/portfolio/16.jpg">
+            </a>
+        </div>
       </div>
       <script src="js/vendor/jquery-1.11.2.min.js"></script>
       <script src="js/vendor/baguetteBox.min.js"></script>
@@ -89,6 +123,10 @@
         function runLightbox() {
           baguetteBox.run('.gallery');
           document.getElementById('gallery-trigger').click()
+        };
+        function runPortfolio() {
+          baguetteBox.run('.portfolio');
+          document.getElementById('portfolio-trigger').click()
         };
       </script>
       <script src="js/vendor/bootstrap.min.js"></script>
