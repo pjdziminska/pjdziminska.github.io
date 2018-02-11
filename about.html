@@ -19,78 +19,45 @@
     <body>
       <div class="container">
         <div class="row">
+          <div class="col-md-6">
+            <p>
+              Paulina Dziminska
+              <br>
+              <a href="pjdziminska@gmail.com" target="_top">pjdziminska@gmail.com</a>
+            </p>
+            <p>I create print as art + art as fashion. Combined with extended use of mixed media, limitless imagination and a dash of VHS nostalgia you get Front Lawn Utopia</p>
+            <p>Born and bred in post-industrial Łódź, Poland. I have moved to England to study Fashion Textiles and Accessories at DeMontfort University. There I focused on print / pattern, re-discovering textiles as an art form. Currently based in Liverpool, I take inspiration from sharpness of technology and softness of nature</p>
+          </div>
+          <div class="col-md-6 hidden-xs">
+            <img src="img/moon.gif" class="img-responsive">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 hidden-xs">
+          </div>
           <div class="col-md-4">
             <a href="#" onclick="runPortfolio()">
-              <img src="img/portfolio.png" class="img-responsive img-transparent" alt="Portfolio">
+              <img src="img/mywork.png" class="img-responsive img-transparent" alt="Portfolio">
             </a>
-          </div>
-          <div class="col-md-4 hidden-xs">
           </div>
           <div class="col-md-4">
             <a href="https://www.etsy.com/shop/FrontLawnUtopia" target="_blank">
-              <img src="img/shop.png" class="img-responsive img-transparent" alt="Etsy">
+              <img src="img/myshop.png" class="img-responsive img-transparent" alt="Etsy">
             </a>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <a href="#" onclick="runLookbook()">
-             <img src="img/lookbook.png" class="img-responsive img-transparent">
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://www.redbubble.com/people/FrontLawnUtopia/portfolio" target="_blank">
-             <img src="img/redbubble.png" class="img-responsive img-transparent">
-            </a>
-         </div>
-          <div class="col-md-4">
-            <a href="https://www.instagram.com/frontlawnutopia/" target="_blank">
-             <img src="img/instagram.png" class="img-responsive img-transparent">
-            </a>
+          <div class="col-md-2 hidden-xs">
           </div>
         </div>
         <div class="row">
           <div class="col-md-4 hidden-xs">
           </div>
           <div class="col-md-4">
-            <a href="about.html">
-             <img src="img/who.png" class="img-responsive img-transparent">
+            <a href="index.html">
+             <img src="img/back.png" class="img-responsive img-transparent">
             </a>
           </div>
           <div class="col-md-4 hidden-xs">
           </div>
-        </div>
-        <div class="gallery">
-            <a href="img/lookbook/00.jpg" id="gallery-trigger">
-            </a>
-            <a href="img/lookbook/01.jpg">
-            </a>
-            <a href="img/lookbook/02.jpg">
-            </a>
-            <a href="img/lookbook/03.jpg">
-            </a>
-            <a href="img/lookbook/04.jpg">
-            </a>
-            <a href="img/lookbook/05.jpg">
-            </a>
-            <a href="img/lookbook/06.jpg">
-            </a>
-            <a href="img/lookbook/07.jpg">
-            </a>
-            <a href="img/lookbook/08.jpg">
-            </a>
-            <a href="img/lookbook/09.jpg">
-            </a>
-            <a href="img/lookbook/10.jpg">
-            </a>
-            <a href="img/lookbook/11.jpg">
-            </a>
-            <a href="img/lookbook/12.jpg">
-            </a>
-            <a href="img/lookbook/13.jpg">
-            </a>
-            <a href="img/lookbook/14.jpg">
-            </a>
         </div>
         <div class="portfolio">
             <a href="img/portfolio/01.jpg" id="portfolio-trigger">
@@ -130,10 +97,6 @@
       <script src="js/vendor/jquery-1.11.2.min.js"></script>
       <script src="js/vendor/baguetteBox.min.js"></script>
       <script>
-        function runLookbook() {
-          baguetteBox.run('.gallery');
-          document.getElementById('gallery-trigger').click()
-        };
         function runPortfolio() {
           baguetteBox.run('.portfolio');
           document.getElementById('portfolio-trigger').click()

@@ -4,6 +4,10 @@ body {
   background: none;
 }
 
+p {
+  font-size: 16px;
+}
+
 .wrapper{
   background: url('../img/background.jpg') no-repeat   center center fixed;
   -webkit-background-size: cover;
