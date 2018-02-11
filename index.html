@@ -20,16 +20,16 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <a href="#" onclick="runPortfolio()">
-              <img src="img/portfolio.png" class="img-responsive img-transparent" alt="Portfolio">
+            <a href="https://www.etsy.com/shop/FrontLawnUtopia" target="_blank">
+              <img src="img/shop.png" class="img-responsive img-transparent" alt="Etsy">
             </a>
           </div>
           <div class="col-md-4 hidden-xs">
              <img src="img/or.png" class="img-responsive img-transparent-or">
           </div>
           <div class="col-md-4">
-            <a href="https://www.etsy.com/shop/FrontLawnUtopia" target="_blank">
-              <img src="img/shop.png" class="img-responsive img-transparent" alt="Etsy">
+            <a href="#" onclick="runPortfolio()">
+              <img src="img/portfolio.png" class="img-responsive img-transparent" alt="Portfolio">
             </a>
           </div>
         </div>
@@ -132,11 +132,15 @@
       <script src="js/vendor/baguetteBox.min.js"></script>
       <script>
         function runLookbook() {
-          baguetteBox.run('.gallery');
+          baguetteBox.run('.gallery', {
+            overlayBackgroundColor: "rgba(255,255,255,1)"
+          });
           document.getElementById('gallery-trigger').click()
         };
         function runPortfolio() {
-          baguetteBox.run('.portfolio');
+          baguetteBox.run('.portfolio', {
+            overlayBackgroundColor: "rgba(255,255,255,1)"
+          });
           document.getElementById('portfolio-trigger').click()
         };
       </script>
