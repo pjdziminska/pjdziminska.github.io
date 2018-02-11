@@ -100,7 +100,9 @@
       <script src="js/vendor/baguetteBox.min.js"></script>
       <script>
         function runPortfolio() {
-          baguetteBox.run('.portfolio');
+          baguetteBox.run('.portfolio', {
+            overlayBackgroundColor: "rgba(255,255,255,0.8)"
+          });
           document.getElementById('portfolio-trigger').click()
         };
       </script>
