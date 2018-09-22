@@ -28,43 +28,52 @@
              <img src="img/or.png" class="img-responsive img-transparent-or">
           </div>
           <div class="col-md-4">
-            <a href="#" onclick="runPortfolio()">
-              <img src="img/portfolio.png" class="img-responsive img-transparent" alt="Portfolio">
-            </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
             <a href="#" onclick="runLookbook()">
-             <img src="img/lookbook.png" class="img-responsive img-transparent">
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://www.redbubble.com/people/FrontLawnUtopia/portfolio" target="_blank">
-             <img src="img/redbubble.png" class="img-responsive img-transparent">
-            </a>
-         </div>
-          <div class="col-md-4">
-            <a href="https://www.instagram.com/frontlawnutopia/" target="_blank">
-             <img src="img/instagram.png" class="img-responsive img-transparent">
+              <img src="img/lookbook.png" class="img-responsive img-transparent" alt="Lookbook">
             </a>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 hidden-xs">
+        <div class="col-md-4">
+            <a href="shop_more.html">
+             <img src="img/shop_more.png" class="img-responsive img-transparent">
+            </a>
           </div>
           <div class="col-md-4">
             <a href="about.html">
              <img src="img/who.png" class="img-responsive img-transparent">
             </a>
           </div>
+          <div class="col-md-4">
+            <a href="#" onclick="runLookbookArchive()">
+             <img src="img/lookbook_archive.png" class="img-responsive img-transparent" alt="Look Archive">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 hidden-xs">
+          </div>
+          <div class="col-md-4">
+            <a href="#" onclick="runPortfolio()">
+              <img src="img/portfolio.png" class="img-responsive img-transparent" alt="Portfolio">
+            </a>
+          </div>
+          <div class="col-md-4 hidden-xs">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 hidden-xs">
+          </div>
+          <div class="col-md-4">
+            <a href="https://www.instagram.com/frontlawnutopia/" target="_blank">
+             <img src="img/instagram_icon.png" class="img-responsive img-transparent">
+            </a>
+          </div>
           <div class="col-md-4 hidden-xs">
           </div>
         </div>
         <div class="gallery">
-            <a href="img/lookbook/00.jpg" id="gallery-trigger">
-            </a>
-            <a href="img/lookbook/01.jpg">
+            <a href="img/lookbook/01.jpg" id="gallery-trigger">
             </a>
             <a href="img/lookbook/02.jpg">
             </a>
@@ -92,6 +101,32 @@
             </a>
             <a href="img/lookbook/14.jpg">
             </a>
+            <a href="img/lookbook/15.jpg">
+            </a>
+            <a href="img/lookbook/16.jpg">
+            </a>
+        </div>
+        <div class="lookbook-archive">
+            <a href="img/lookbook_archive/01.jpg" id="lookbook-archive-trigger">
+            </a>
+            <a href="img/lookbook_archive/02.jpg">
+            </a>
+            <a href="img/lookbook_archive/03.jpg">
+            </a>
+            <a href="img/lookbook_archive/04.jpg">
+            </a>
+            <a href="img/lookbook_archive/05.jpg">
+            </a>
+            <a href="img/lookbook_archive/06.jpg">
+            </a>
+            <a href="img/lookbook_archive/07.jpg">
+            </a>
+            <a href="img/lookbook_archive/08.jpg">
+            </a>
+            <a href="img/lookbook_archive/09.jpg">
+            </a>
+            <a href="img/lookbook_archive/10.jpg">
+            </a>
         </div>
         <div class="portfolio">
             <a href="img/portfolio/01.jpg" id="portfolio-trigger">
@@ -116,16 +151,6 @@
             </a>
             <a href="img/portfolio/11.jpg">
             </a>
-            <a href="img/portfolio/12.jpg">
-            </a>
-            <a href="img/portfolio/13.jpg">
-            </a>
-            <a href="img/portfolio/14.jpg">
-            </a>
-            <a href="img/portfolio/15.jpg">
-            </a>
-            <a href="img/portfolio/16.jpg">
-            </a>
         </div>
       </div>
       <script src="js/vendor/jquery-1.11.2.min.js"></script>
@@ -133,13 +158,19 @@
       <script>
         function runLookbook() {
           baguetteBox.run('.gallery', {
-            overlayBackgroundColor: "rgba(255,255,255,0.9)"
+            overlayBackgroundColor: "rgba(255,255,255,0.1)"
           });
           document.getElementById('gallery-trigger').click()
         };
+        function runLookbookArchive() {
+          baguetteBox.run('.lookbook-archive', {
+            overlayBackgroundColor: "rgba(255,255,255,0.1)"
+          });
+          document.getElementById('lookbook-archive-trigger').click()
+        };
         function runPortfolio() {
           baguetteBox.run('.portfolio', {
-            overlayBackgroundColor: "rgba(255,255,255,0.9)"
+            overlayBackgroundColor: "rgba(255,255,255,0.1)"
           });
           document.getElementById('portfolio-trigger').click()
         };
